@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <script type="text/javascript">
+  (function(){
+    // bootstrap here
+    var polyfills = (typeof Promise !== "undefined" ? [] : []); // for IE11
+    var libs = polyfills.concat(['/libs.js','/app.js']);
+    !function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" async defer></'+t+">"),a.src=s}(document,"script",libs);
+  }())
+  </script>
+  <script type="text/javascript" src="../data/starwars.js"></script>
+</head>
+<body>
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="app">
+    <noscript>
+    <h1>Please enable JavaScript.</h1>
+    </noscript>
+  </div>
+
+</body>
+</html>
